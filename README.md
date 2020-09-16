@@ -1,5 +1,7 @@
 # GameOfLife
 
+ [![Actions Status](https://github.com/adrianomota/game_of_life/workflows/CI/badge.svg)](https://github.com/{adrianomota/game_of_life/CI)
+ 
 **TODO: Add description**
 
 ## Installation
