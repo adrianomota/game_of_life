@@ -3,12 +3,18 @@
 [![Actions Status](https://github.com/adrianomota/game_of_life/workflows/CI/badge.svg)](https://github.com/{adrianomota/game_of_life/CI)
 
 O jogo da vida de Conway é um sistema de automação celular usado para
-exemplificara interação de entidades diferentes causando uma mudança no meio.
+exemplificar como a interação entre entidades influência na sua progressão.
 
 O jogo é uma implementado como um mapa/mundo bi-dimensional onde cada célula
 ocupa um espaço no plano cartesiano e se encontra em estado ativo ou inativo.
 
-## Installation
+!{RODO: Imagem()}
+
+## Running
+
+Cada "jogo" pode ser iniciado rodando `GameOfLife.game.new(options)`
+
+## Instalation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `game_of_life` to your list of dependencies in `mix.exs`:
