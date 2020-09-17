@@ -13,8 +13,13 @@ ocupa um espaço no plano cartesiano e se encontra em estado ativo ou inativo.
 Cada simulação pode ser iniciado rodando `GameOfLife.game.new(options)` onde
 `options` é uma keyword com as seguintes chaves/opções:
 
-| Opção | Tipo | Requerido ? | Descrição |
-| `:size` | `pos_integer` | Não | O tamanho de um lado no plano simulado |
+```elixir
+
+|  Opção  |     Tipo      | Requerido ? |               Descrição               |
+
+| `:size` | `pos_integer` |     Não     | O tamanho de um lado no plano simulado|
+
+```
 
 ## Instalation
 
