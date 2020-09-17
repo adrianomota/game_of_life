@@ -8,7 +8,7 @@ exemplificar como a interação entre entidades influência na sua progressão.
 O jogo é uma implementado como um mapa/mundo bi-dimensional onde cada célula
 ocupa um espaço no plano cartesiano e se encontra em estado ativo ou inativo.
 
-!{RODO: Imagem()}
+!{TODO: Imagem()}
 
 ## Running
 
