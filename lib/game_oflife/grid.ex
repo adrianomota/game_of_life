@@ -13,33 +13,10 @@ defmodule GameOfLife.Grid do
     }
   end
 
-  @spec active?(atom | %{cells: tuple}, pos_integer, pos_integer) :: any
   def active?(grid, x, y) do
     grid.cells
     |> elem(x - 1)
     |> elem(y - 1)
-  end
-
-  def will_thrive?(grid, x, y) do
-    neighbours = active_neighbours(grid, x, y)
-    active? = active?(grid, x, y)
-
-    cond do
-      active? and neighbours < 2 ->
-        false
-
-      active? and neighbours > 3 ->
-        false
-
-      not active? and neighbours == 3 ->
-        true
-
-      active? and neighbours in 2..3 ->
-        true
-
-      not active? ->
-        false
-    end
   end
 
   def activate(grid, x, y) do
@@ -52,11 +29,17 @@ defmodule GameOfLife.Grid do
     |> change_cell_state(x, y, false)
   end
 
-  defp active_neighbours(grid, x, y) do
+  def active_neighbours(grid, x, y) do
     grid
     |> neighbours(x, y)
     |> Enum.map(fn {x2, y2} -> active?(grid, x2, y2) end)
     |> Enum.count(&(&1 == true))
+  end
+
+  def cells_to_analyze(grid) do
+    for x <- 1..grid.size, y <- 1..grid.size do
+      {x, y}
+    end
   end
 
   defp neighbours(grid, x, y) do
