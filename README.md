@@ -1,8 +1,12 @@
 # GameOfLife
 
- [![Actions Status](https://github.com/adrianomota/game_of_life/workflows/CI/badge.svg)](https://github.com/{adrianomota/game_of_life/CI)
- 
-**TODO: Add description**
+[![Actions Status](https://github.com/adrianomota/game_of_life/workflows/CI/badge.svg)](https://github.com/{adrianomota/game_of_life/CI)
+
+O jogo da vida de Conway é um sistema de automação celular usado para
+exemplificara interação de entidades diferentes causando uma mudança no meio.
+
+O jogo é uma implementado como um mapa/mundo bi-dimensional onde cada célula
+ocupa um espaço no plano cartesiano e se encontra em estado ativo ou inativo.
 
 ## Installation
 
@@ -20,4 +24,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/game_of_life](https://hexdocs.pm/game_of_life).
-
