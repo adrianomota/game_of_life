@@ -8,11 +8,13 @@ exemplificar como a interação entre entidades influência na sua progressão.
 O jogo é uma implementado como um mapa/mundo bi-dimensional onde cada célula
 ocupa um espaço no plano cartesiano e se encontra em estado ativo ou inativo.
 
-!{TODO: Imagem()}
-
 ## Running
 
-Cada "jogo" pode ser iniciado rodando `GameOfLife.game.new(options)`
+Cada simulação pode ser iniciado rodando `GameOfLife.game.new(options)` onde
+`options` é uma keyword com as seguintes chaves/opções:
+
+| Opção | Tipo | Requerido ? | Descrição |
+| `:size` | `pos_integer` | Não | O tamanho de um lado no plano simulado |
 
 ## Instalation
 
